@@ -4,6 +4,8 @@ SJSU CMPE295
 
 This repo is intended to keep our work enviroments the same across our machines to avoid any "it works on my machine" problems.
 
+Note the tips on using Vagrant aren't the
+
 ## Instructions
 
 ### Setup Vagrant on your Machine 
@@ -11,6 +13,7 @@ This repo is intended to keep our work enviroments the same across our machines 
 
 Install Virtualbox:
 ```
+brew update
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 ```
@@ -23,7 +26,7 @@ brew cask install vagrant
 
 Install the Vagrant plugin to keep Virtualbox Guest Additions in sync:
 ```
-vagrant gem install vagrant-vbguest
+vagrant plugin install vagrant-vbguest
 ```
 
 ### Installing this box
@@ -37,13 +40,51 @@ vagrant up
 
 After running `vagrant up` the machine will be setup and provisioned (set up) properly with the ROS development environment for the masters project. 
 
+> **Note** - The first time running `vagrant up` it will take a long time as everything gets set up.
+
 ### Using the Vagrant box
+#### Quick commands
+These are the more common commands that would be used here.
 
-#### Starting up and connecting
+* `vagrant up` - bring the box up
+* `vagrant ssh` - shell into the box
+* `vagrant halt` - shutdown the box
+* `vagrant suspend` - suspend the box
+* `vagrant resume` - resume the box
 
-Whenever you want to start the Vagrant box, run the command: `vagrant up` when *inside the repository*. (E.g. be in the directory of the folder structure shown in the next section)
+#### Starting up and shutting down
+
+#### Getting online
+Whenever you want to start the Vagrant box, run the command: `vagrant up` when *inside the repository*. 
 
 Once the vagrant box is running you can `ssh` to it using `vagrant ssh`.
+
+Example:
+```
+# pretend you're in your home directory and the vagrant repo is cloned at ~/workspace/master-v-ros
+cd workspace/master-v-ros
+vagrant up
+vagrant ssh
+```
+
+#### Suspending the v-box
+You can also "pause" your vagrant box to save resources with the `vagrant suspend` command and using `vagrant resume` to bring it back online. This should save some battery life without losing your session.
+
+```
+vagrant suspend
+# state is saved and box is suspended
+vagrant resume
+# now it's back online
+```
+
+#### Shutting down
+If you're `ssh`'d into the box (via `vagrant ssh`) you can power off the machine using `sudo poweroff`. Or if you're not in the machine you can run the command `vagrant halt`
+
+```
+vagrant halt
+# box is offline now
+```
+
 
 #### Folder structure
 The repo directory contents is as follows:
