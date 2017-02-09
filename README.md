@@ -39,6 +39,8 @@ vagrant up
 
 After running `vagrant up` the machine will be setup and provisioned (set up) properly with the ROS development environment for the masters project. 
 
+> **Note** - The first time running `vagrant up` it will take a long time as everything gets set up.
+
 ### Using the Vagrant box
 #### Quick commands
 These are the more common commands that would be used here.
