@@ -1,0 +1,7 @@
+.DS_STORE
+share/*
+!share/.gitkeep
+provision/configs/.vim/bundle
+!provision/configs/.vim/bundle/Vundle.vim
+.vagrant
+.swp
