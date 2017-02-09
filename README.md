@@ -13,6 +13,7 @@ Note the tips on using Vagrant aren't the
 
 Install Virtualbox:
 ```
+brew update
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 ```
@@ -25,7 +26,7 @@ brew cask install vagrant
 
 Install the Vagrant plugin to keep Virtualbox Guest Additions in sync:
 ```
-vagrant gem install vagrant-vbguest
+vagrant plugin install vagrant-vbguest
 ```
 
 ### Installing this box
@@ -66,7 +67,7 @@ vagrant up
 vagrant ssh
 ```
 
-#### Suspending the v-bos
+#### Suspending the v-box
 You can also "pause" your vagrant box to save resources with the `vagrant suspend` command and using `vagrant resume` to bring it back online. This should save some battery life without losing your session.
 
 ```
