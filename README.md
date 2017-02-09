@@ -45,11 +45,11 @@ After running `vagrant up` the machine will be setup and provisioned (set up) pr
 #### Quick commands
 These are the more common commands that would be used here.
 
-`vagrant up` - bring the box up
-`vagrant ssh` - shell into the box
-`vagrant halt` - shutdown the box
-`vagrant suspend` - suspend the box
-`vagrant resume` - resume the box
+* `vagrant up` - bring the box up
+* `vagrant ssh` - shell into the box
+* `vagrant halt` - shutdown the box
+* `vagrant suspend` - suspend the box
+* `vagrant resume` - resume the box
 
 #### Starting up and shutting down
 
