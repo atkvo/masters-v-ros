@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty64"
-  config.vm.synced_folder "share/", "/home/vagrant/workspace"
+  config.vm.synced_folder "share/", "/home/vagrant/share"
   config.vm.provision "shell", path: "provision/install.sh"
   config.vm.provision "shell", inline: "rosdep init"
   config.vm.provision "shell", inline: "rosdep update", privileged: false
