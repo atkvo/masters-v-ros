@@ -26,7 +26,7 @@ apt-get install tmux -y
 
 echo "Installing ROS"
 apt-get install ros-kinetic-desktop-full -y
-
+apt install ros-kinetic-urg-node -y
 
 # echo "Setting up ROS environment"
 
