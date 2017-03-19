@@ -105,15 +105,15 @@ masters-v-ros/
 #### GUI Mode
 If you prefer to not work from the commandline (`headless` mode) and want the UI of Ubuntu then you must modify the `Vagrantfile` shown above.
 
-In the section of the `Vagrantfile` shown below, just uncomment the last 3 lines (`v.gui` and `v.customize`). Add comments to them to go back to `headless` mode.
+In the section of the `Vagrantfile` shown below, just uncomment the 3 lines shown below to get into GUI mode. Add comments to them to go back to `headless` mode.
 
 ```ruby
   config.vm.provider "virtualbox" do |v|
     v.memory = "2048"
-    # v.gui = true
+    # v.gui = true                                          # uncomment for GUI
+    # v.customize ["modifyvm", :id, "--vram", "128"]        # uncomment for GUI
+    # v.customize ["modifyvm", :id, "--accelerate3d", "on"] # uncomment for GUI
     # v.customize ["modifyvm", :id, "--options", "parameter"]
-    # v.customize ["modifyvm", :id, "--vram", "128"]
-    # v.customize ["modifyvm", :id, "--accelerate3d", "on"]
   end
 ```
 
