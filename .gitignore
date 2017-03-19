@@ -5,3 +5,4 @@ provision/configs/.vim/bundle
 !provision/configs/.vim/bundle/Vundle.vim
 .vagrant
 .swp
+ubuntu-xenial-16.04-cloudimg-console.log

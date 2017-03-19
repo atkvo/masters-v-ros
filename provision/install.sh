@@ -23,7 +23,7 @@ echo "Installing tmux"
 apt-get install tmux -y
 
 echo "Installing ROS"
-apt-get install ros-indigo-desktop-full -y
+apt-get install ros-kinetic-desktop-full -y
 
 
 # echo "Setting up ROS environment"
