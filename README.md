@@ -33,7 +33,7 @@ vagrant plugin install vagrant-vbguest
 
 Clone this repository to your drive 
 ```
-git clone https://github.com/voandrew/masters-v-ros.git
+git clone https://github.com/atkvo/masters-v-ros.git
 cd masters-v-ros
 vagrant up
 ```
