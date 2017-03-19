@@ -10,6 +10,8 @@ apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD
 
 apt-get update -y
 
+apt install g++
+
 echo "Installing Ubuntu desktop"
 apt-get install --no-install-recommends ubuntu-desktop -y
 apt-get install gnome-terminal -y

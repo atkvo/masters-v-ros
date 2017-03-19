@@ -8,7 +8,7 @@ echo "Setting up ROS environment"
 
 echo "Environment setup"
 
-echo "source /opt/ros/indigo/setup.bash" >> /home/vagrant/.bashrc
+echo "source /opt/ros/kinetic/setup.bash" >> /home/ubuntu/.bashrc
 source ~/.bashrc
 
 echo "Installing rosinstall"
