@@ -121,7 +121,7 @@ In the section of the `Vagrantfile` shown below, just uncomment the 3 lines show
 The **share** directory will be shared between the your host and guest. This folder will be mapped to the following directory on the **guest**: 
 
 ```
-/home/vagrant/share
+/home/ubuntu/share
 ```
 
-This means whatever you put on your host machine in the `share/` folder will also appear in the **guest's** `/home/vagrant/share/` folder and vice versa. Useful for editing files on your host machine.
+This means whatever you put on your host machine in the `share/` folder will also appear in the **guest's** `/home/ubuntu/share/` folder and vice versa. Useful for editing files on your host machine.
